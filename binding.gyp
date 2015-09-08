@@ -3,7 +3,8 @@
         {
             "target_name": "textdetector",
             "dependencies": [
-                "native/ocr/ocr.gyp:ocr"
+                "native/ocr/ocr.gyp:ocr",
+                "deps/leptonica/leptonica.gyp:liblept"
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",

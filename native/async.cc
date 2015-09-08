@@ -7,17 +7,6 @@
 using namespace std;
 using namespace v8;
 using namespace Nan;
-using v8::Function;
-using v8::Local;
-using v8::Number;
-using v8::Value;
-using Nan::AsyncQueueWorker;
-using Nan::AsyncWorker;
-using Nan::Callback;
-using Nan::HandleScope;
-using Nan::New;
-using Nan::Null;
-using Nan::To;
 
 class OcrWorker : public AsyncWorker {
     public:
@@ -31,7 +20,7 @@ class OcrWorker : public AsyncWorker {
 
         void HandleOKCallback () {
             Local<Value> argv[] = {
-                Null(),
+                Nan::Null(),
                 Nan::New(decodedText).ToLocalChecked()
             };
             callback->Call(2, argv);
