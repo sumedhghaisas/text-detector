@@ -32,6 +32,8 @@
                 "deps/opencv/modules/core/include",
                 "deps/opencv/modules/dynamicuda/include",
                 "deps/opencv/modules/imgproc/include",
+	        "deps/opencv/modules/text/include",
+	        "deps/opencv/modules/text/include",
                 "deps/lswms",
 	    ],
             "sources": [

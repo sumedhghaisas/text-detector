@@ -12,6 +12,7 @@
 //
 // Copyright (C) 2000-2008, Intel Corporation, all rights reserved.
 // Copyright (C) 2009, Willow Garage Inc., all rights reserved.
+// Copyright (C) 2013, OpenCV Foundation, all rights reserved.
 // Third party copyrights are property of their respective owners.
 //
 // Redistribution and use in source and binary forms, with or without modification,
@@ -40,16 +41,8 @@
 //
 //M*/
 
-#ifndef __OPENCV_PRECOMP_H__
-#define __OPENCV_PRECOMP_H__
-
-#include "opencv2/text.hpp"
-
-#define HAVE_TESSERACT
-
-#ifdef HAVE_TESSERACT
-#include <tesseract/baseapi.h>
-#include <tesseract/resultiterator.h>
+#ifdef __OPENCV_BUILD
+#error this is a compatibility header which should not be used inside the OpenCV library
 #endif
 
-#endif
+#include "opencv2/ml.hpp"
