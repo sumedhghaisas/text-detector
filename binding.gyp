@@ -7,6 +7,7 @@
                 "deps/leptonica/leptonica.gyp:liblept",
                 "deps/jpg/jpg.gyp:jpg",
                 "deps/lodepng/lodepng.gyp:lodepng",
+                "deps/zxing/zxing.gyp:libzxing",
             ],
             "include_dirs": [
                 "<!(node -e \"require('nan')\")",
